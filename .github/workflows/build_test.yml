@@ -23,6 +23,4 @@ jobs:
     - name: Build the project
       run: dotnet build --no-restore
     - name: Run unit tests
-      env:
-        CHROMEWEBDRIVER: /usr/bin/google-chrome
-      run: dotnet test --verbosity normal
+      run: dotnet test --no-build --verbosity normal
